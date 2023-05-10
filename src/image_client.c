@@ -5,14 +5,14 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 
-#define SERVER_IP "127.0.0.1"
-#define SERVER_PORT 8080
+#define SERVER_IP "192.168.64.2"
+#define SERVER_PORT 9001
 #define BUF_SIZE 1024
 
 int main(int argc, char const *argv[])
 {
     int sockfd;
-    char *filename = "image.jpeg";
+    char *filename = "image.jpg";
     char buffer[BUF_SIZE];
     struct sockaddr_in server_addr;
     FILE *fp;
