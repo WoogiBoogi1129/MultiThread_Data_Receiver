@@ -5,14 +5,14 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 
-#define SERVER_IP "192.168.64.2"
+#define SERVER_IP "192.168.125.51"
 #define SERVER_PORT 9001
 #define BUF_SIZE 1024
 
 int main(int argc, char const *argv[])
 {
     int sockfd;
-    char *filename = "sex.jpg";
+    char *filename = "sex1.jpeg";
     char buffer[BUF_SIZE];
     struct sockaddr_in server_addr;
     FILE *fp;
